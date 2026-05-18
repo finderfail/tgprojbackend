@@ -27,7 +27,7 @@ export class CardsController {
   constructor(private readonly cardsService: CardsService) {}
 
   @Get()
-  getCards() {
+  async getCards() {
     return this.cardsService.getCards();
   }
 }
